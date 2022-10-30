@@ -19,4 +19,7 @@ func main() {
 	}
 
 	fmt.Println(slice[len(slice)-1])
+
+	//output = 6857
+
 }
