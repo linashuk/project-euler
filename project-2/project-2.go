@@ -4,22 +4,36 @@ import "fmt"
 
 func main() {
 
-	fibonacciSlice := []int{2}
-	fmt.Println(fibonacciSlice)
+	fibonacciSlice := []int{}
 
-	firstInt := 1
-	secondInt := 2
-	var thirdInt int
+	// declare starting integers
 
-	for firstInt+secondInt < 4000000 {
-		thirdInt = firstInt + secondInt
-		if thirdInt%2 == 0 {
-			fibonacciSlice = append(fibonacciSlice, thirdInt)
+	a, b := 0, 1
+	var c int
+
+	for a+b < 4000000 {
+
+		c = a + b
+
+		if c%2 == 0 {
+
+			// append to slice
+			fibonacciSlice = append(fibonacciSlice, c)
+
 		}
-		firstInt = secondInt
-		secondInt = thirdInt
+
+		// reassign a and b integers
+		a = b
+		b = c
 	}
 
-	fmt.Println(fibonacciSlice)
+	var sumFibonacci int
+
+	// interate through the slice
+	for i := 0; i < len(fibonacciSlice); i++ {
+		sumFibonacci = sumFibonacci + fibonacciSlice[i]
+	}
+
+	fmt.Println(sumFibonacci)
 
 }
