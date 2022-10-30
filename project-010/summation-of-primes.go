@@ -10,10 +10,6 @@ func main() {
 
 	input := 2000000
 
-	firstBatch := input / 4
-
-	// parentSlice := []int{}
-
 	sum := 0
 
 	for num := input; num > 1; num-- {
