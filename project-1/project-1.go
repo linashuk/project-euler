@@ -22,6 +22,9 @@ func multipleCalc() {
 		}
 
 	}
+
 	fmt.Println(sum)
+
+	// output = 233168
 
 }

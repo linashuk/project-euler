@@ -36,4 +36,6 @@ func main() {
 
 	fmt.Println(sumFibonacci)
 
+	// output = 4613732
+
 }
